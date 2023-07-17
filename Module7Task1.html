@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 7 Task 1</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            border: 2px solid tomato;
+        }
+
+        .item1 {
+            width: 60%;
+            border: 2px solid teal;
+        }
+
+        .item1 img {
+            width: 100%;
+        }
+
+        .item2 {
+            width: 40%;
+            border: 2px solid teal;
+        }
+
+        .item2 input {
+            display: block;
+            width: 90%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+
+                flex-direction: column;
+                align-items: center;
+                border: 2px solid tomato;
+            }
+
+            .item1 {
+                border: 2px solid teal;
+                width: auto;
+            }
+
+            .item2 {
+                width: auto;
+                }
+
+            }
+    </style>
+</head>
+
+<body>
+    <h2>Design a responsive flex layout</h2>
+
+    <div class="container">
+        <div class="item2">
+            <form action="">
+                <h1>Hello</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis ipsa inventore error a
+                    corporis sint dicta ratione natus at deserunt rem nemo hic possimus, ab officiis odit ea
+                    voluptatibus nihil. Iste dicta perferendis deleniti delectus error voluptatem et cupiditate
+                    blanditiis consectetur modi eligendi, libero laboriosam voluptatum facilis quod ipsum cumque, fugit
+                    earum id consequuntur fuga? Nihil laboriosam placeat dolor aperiam in eveniet aliquam molestias ipsa
+                    distinctio voluptatibus necessitatibus culpa, itaque inventore beatae dolorem suscipit? Adipisci
+                    inventore ad consequuntur repellendus nostrum amet. Tempora amet voluptate accusamus eos quod magni,
+                    itaque obcaecati consequatur earum quidem? Accusantium veritatis eveniet obcaecati praesentium
+                    possimus, repudiandae perspiciatis. Error esse, sapiente nobis nemo sunt officiis quas sint at
+                    impedit provident molestiae tempora quisquam eaque quidem architecto recusandae. Optio consequatur
+                    iste exercitationem illum cumque inventore, assumenda cupiditate repellendus dolorum, perspiciatis
+                    nesciunt! Nam hic facere molestiae quasi repudiandae nemo aliquid, aut tenetur possimus vero
+                    aspernatur unde? Soluta aliquam dicta qui autem earum, est consequatur delectus quod architecto?
+                    Ducimus porro provident eum consequuntur cumque itaque, quaerat necessitatibus eaque nam unde quasi
+                    eos nemo sint quod vitae odit eveniet sapiente veniam commodi placeat autem quidem. Enim rerum
+                    molestias, quam assumenda optio, iste, distinctio esse nam sapiente quidem iusto quae maiores?
+                </p>
+                <h3>Login Form</h3>
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="button" value="Login">
+            </form>
+        </div>
+        <div class="item1">
+            <img src="images/food.jpg" alt="">
+            <p>
+                Please fill up this form to continue. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+                magni. Voluptates dolor, facilis eius esse a eum quis. Ea, saepe.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

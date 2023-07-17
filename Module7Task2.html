@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        .item1 {
+            grid-column: 1;
+            grid-row: 1 / span 2;
+            background-color: pink;
+        }
+
+        .item2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            /* grid-column: 2 / span 2;
+            grid-row: 1; */
+            background-color: orange;
+        }
+
+        .item3 {
+            background-color: blueviolet;
+        }
+
+        .item4 {
+            background-color: cadetblue;
+        }
+
+        .container div {
+            border-radius: 5px;
+            border: none;
+            padding: 100px;
+            padding-left: 5px;
+            padding-top: 0px;
+        }
+
+        @media screen and (max-width: 576px) {
+           .container{
+                display: flex;
+                flex-direction: column;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>1</h1>
+        </div>
+        <div class="item2">
+            <h1>2</h1>
+        </div>
+        <div class="item3">
+            <h1>3</h1>
+        </div>
+        <div class="item4">
+            <h1>4</h1>
+        </div>
+    </div>
+</body>
+
+</html>
